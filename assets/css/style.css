@@ -1,10 +1,3 @@
-@import '_variables.css';
-:root{
-    --secondary: #e94560;
-    --primary: #0f3460;
-    --dark: #1a1a2e;
-    --dark-2: #16213e;
-}
 .bg-header-image {
     background-image: url('https://p6.storage.canalblog.com/68/03/1305055/99585651_o.jpg');
     height: calc(100vh - 59px);  
@@ -14,7 +7,7 @@
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 4px solid var(--dark);
+    border: 4px solid #1a1a2e
     overflow: hidden;
     margin-left: 5em;
 
@@ -66,8 +59,8 @@
 }
 .section h2{
     margin: 1em .5em;
-    color: var(--primary);
-    border-bottom: 1px solid var(--primary);
+    color: #0f3460
+    border-bottom: 1px solid #0f3460
     padding: .5em 1em;
     display: inline-block;
 }
@@ -83,7 +76,7 @@
     font-weight: 500;
 }
 .fas.fa-star.checked{
-    color: var(--secondary);
+    color: #e94560
 }
 .btn i{
     margin-right: 20px;
