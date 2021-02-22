@@ -1,5 +1,10 @@
 @import '_variables.css';
-
+:root{
+    --secondary: #e94560;
+    --primary: #0f3460;
+    --dark: #1a1a2e;
+    --dark-2: #16213e;
+}
 .bg-header-image {
     background-image: url('https://p6.storage.canalblog.com/68/03/1305055/99585651_o.jpg');
     height: calc(100vh - 59px);  
