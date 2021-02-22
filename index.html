@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- Boootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <!-- MDB -->
@@ -17,7 +20,7 @@
 <body>
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
       <!-- Container wrapper -->
       <div class="container-fluid">
         <!-- Navbar brand -->
@@ -32,13 +35,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Left links -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Ratsima Niaina Fredson Dorel</a>
+            <li class="nav-item ml-10px">
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-person"></i> Niaina Fredson
+                Dorel</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Test 1</a>
+            <li class="nav-item ml-10px">
+              <a class="nav-link active" aria-current="page" href="#experience-section"><i
+                  class="text-secondary fas fa-user-tie mr-4"></i> Expériences</a>
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="#competence-section"><i
+                  class="text-info bi bi-bricks mr-4"></i> Compétences</a>
+            </li>
+            <li class="nav-item ml-10px">
+              <a class="nav-link active" aria-current="page" href="#"><i class="text-success bi bi-telephone mr-4"></i>
+                Me contancter</a>
             </li>
           </ul>
           <!-- Left links -->
@@ -55,16 +68,19 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-4">
-              <div class="profile-container">
+              <div class="profile-container m-auto">
                 <img src="assets/imgs/profile.jpg" alt="" class="profile-image">
               </div>
             </div>
             <div class="col-6">
               <div class="d-flex justify-content-center align-items-center h-100">
                 <div class="text-white">
-                  <h1 class="mb-3">Bonjour !</h1>
-                  <h4 class="mb-3">Je suis Ratsima Niaina Fredson Dorel</h4>
-                  <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+                  <h1 class="mb-3">RATSIMA Niaina Fredson Dorel</h1>
+                  <h3 class="mb-3 text-light">Développeur MEAN Stack, 3ans d'expérience</h3>
+                  <!-- <h4 class="mb-3">Je suis Ratsima Niaina Fredson Dorel</h4> -->
+                  <a class="btn btn-outline-light btn-lg mt-4" href="#!" role="button"> <i
+                      class="bi bi-telephone mr-5"></i>
+                    Me contacter</a>
                 </div>
               </div>
             </div>
@@ -73,12 +89,23 @@
       </div>
     </div>
   </header>
-  <div class="section">
+  <div class="section" id="experience-section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
           <h2 class="display-6"> <i class="fas fa-user-tie"></i> EXPERIENCE PROFESSIONNELLE</h2>
           <ul class="s-list pl-5">
+            <li class="mt-3">
+              <div class="date">
+                Mi 2019 - Début 2020
+              </div>
+              <div class="fonction">
+                Consultant développeur UNESCO
+              </div>
+              <div class="description">
+                Création d'application mobile hybride avec Ionic
+              </div>
+            </li>
             <li class="mt-3">
               <div class="date">
                 Début 2019 - Mi 2019 (Travail à mi-temps)
@@ -87,8 +114,8 @@
                 Développeur MEAN Stack, ASA
               </div>
               <div class="description">
-Création d’application web, pour gestion de stock avec Angular,
-MongoDB et Nodejs
+                Création d’application web, pour gestion de stock avec Angular,
+                MongoDB et Nodejs
               </div>
             </li>
             <li class="mt-3">
@@ -99,28 +126,179 @@ MongoDB et Nodejs
                 Développeur MEAN Stack, YOUNG DEV
               </div>
               <div class="description">
-                Création d’application web, pour gestion de commande avec An-
-                gular
+                Création d’application web, pour gestion de commande avec Angular
               </div>
             </li>
-
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="section">
+  <div class="section" id="competence-section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <h2 class="display-6"> <i class="fas fa-user-tie"></i>COMPÉTENCES</h2>
-          <ul class="s-list pl-5">
-            Chargement des contenues via Javascript...
+          <h2 class="display-6"><i class="bi bi-bricks"></i> COMPÉTENCES</h2>
+        </div>
+        <div class="col-6">
+          <ul class="s-list-2 pl-5">
+            <li>
+              <span class="text-bold">Angular 4+ </span>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <div class="fas fa-star"></div>
+            </li>
+            <li>
+              <span class="text-bold">Ionic 3+ </span>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <div class="fas fa-star"></div>
+            </li>
+            <li>
+              <span class="text-bold">Bot Messenger </span>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star"></i>
+              <div class="fas fa-star"></div>
+            </li>
+            <li>
+              <span class="text-bold">GIT </span>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <div class="fas fa-star"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul class="s-list-2 pl-5">
+            <li>
+              <span class="text-bold">NodeJS </span>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <div class="fas fa-star"></div>
+            </li>
+            <li>
+              <span class="text-bold">MongoDB NoSQL</span>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <div class="fas fa-star"></div>
+            </li>
+            <li>
+              <span class="text-bold">PHP </span>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <div class="fas fa-star"></div>
+            </li>
+            <li>
+              <span class="text-bold">MYSQL </span>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <div class="fas fa-star"></div>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="section" id="formation-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="display-6"><i class="bi bi-book"></i> FORMATIONS</h2>
+          <ul class="s-list pl-5">
+            <li class="mt-3">
+              <div class="date">
+                2018 - 2019
+              </div>
+              <div class="fonction">
+                Bacc+2 Mathématiques et Informatique
+              </div>
+              <div class="description">
+                Université d'Antananarivo
+              </div>
+            </li>
+            <li class="mt-3">
+              <div class="date">
+                2017 - 2018
+              </div>
+              <div class="fonction">
+                Bacc+1 Mathématiques et Informatique
+              </div>
+              <div class="description">
+                Université d'Antananarivo
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center text-white section p-0 mt-5" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container ">
+      <h2 class="display-6"><i class="bi bi-person-lines-fill"></i> Contact</h2>
+      <div class="row">
+        <div class="col-4 text-left">
+          <div class="contact-item text-dark">
+            <i class="bi bi-telephone text-success"></i> +261 34 07 847 60
+          </div>
+        </div>
+        <div class="col-4 text-left">
+          <div class="contact-item text-dark">
+            <i class="bi bi-envelope text-danger"></i> niainaratsima@gmail.com
+          </div>
+        </div>
+        <div class="col-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+            <!-- Github -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+      </div>
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-dark" href="#">Ratsima Niaina Fredson Dorel</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
 </body>
